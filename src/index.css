@@ -1,4 +1,63 @@
 /* src/App.css */
+#root {
+    background-color: #bc8a8a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a36262;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+
+}
+
+.logo2 {
+    font-size: 30px;
+}
+
+.logo-image {
+    max-width: 120px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f9f9f9;
+}
+
+
 .App {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,7 +70,6 @@
 .App h1 {
     margin-top: -20px;
     padding: 30px;
-    /* size:49px;  */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -87,4 +145,63 @@
     color: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -20px;
+}
+
+@media (max-width: 767px) {
+    .nav-list {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo2 {
+        font-size: 25px;
+    }
+
+    .logo-image {
+        max-width: 100px;
+    }
+
+    .nav-list {
+        gap: 30px;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+
+    .App {
+        padding: 40px;
+    }
+
+    .App h1 {
+        font-size: 36px;
+    }
+
+    .candidate-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 453px) {
+    .logo2 {
+        font-size: 12px;
+        margin-left: -20px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
 }

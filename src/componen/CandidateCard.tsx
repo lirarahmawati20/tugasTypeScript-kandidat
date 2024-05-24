@@ -6,7 +6,6 @@ interface CandidateCardProps {
 
 function CandidateCard(props: CandidateCardProps) {
 
-
   return (
     <div className="candidate-card">
       <div className="candidate-info">
