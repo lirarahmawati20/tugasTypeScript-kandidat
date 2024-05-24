@@ -4,17 +4,19 @@ interface CandidateCardProps {
   candidate: Candidate;
 }
 
-const CandidateCard: React.FC<CandidateCardProps> = ({ candidate }) => {
+function CandidateCard(props: CandidateCardProps) {
+
+
   return (
     <div className="candidate-card">
       <div className="candidate-info">
-        <span className="candidate-id">{candidate.number}</span>
-        <img src={candidate.photo} alt="" />
+        <span className="candidate-id">{props.candidate.number}</span>
+        <img src={props.candidate.photo} alt="" />
       </div>
-      <h3>{candidate.name}</h3>
-      <h4>{candidate.batch}</h4>
+      <h3>{props.candidate.name}</h3>
+      <h4>{props.candidate.batch}</h4>
     </div>
   );
-};
-
+}
 export default CandidateCard;
+
